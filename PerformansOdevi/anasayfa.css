@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,500&family=Sofia+Sans:wght@100;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    min-height:100vh;
+    width: 100%;
+    max-width: 2000px;
+    background-image: url(img/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    
+}
+.navbar{
+    width: 100%;
+    max-width: 1200px;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 16%;
+    height: auto;
+    cursor: pointer;
+}
+aside{
+    flex: 1;
+    padding-left: 60px;
+}
+aside ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0% 2%;
+    color: rgb(208, 59, 108);
+ }
+ aside ul li a{
+    text-decoration: none;
+ }
+ .content h1{
+font-family:'Nunito', sans-serif; 
+ width: 35%;
+font-size: 40px;
+font-weight: 100;
+margin-top: 2%;
+margin-bottom: 1%;
+color: rgb(208, 59, 108);
+ }
+ .content{
+    width: 65%;
+    margin-top: 10%;
+    margin-left: 10%;
+ }
+ .content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg,#87adfe,#ff77cd);
+    border: radius 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgb(94, 28, 68,0.15);
+ }
+ .manken-img{
+    height:90%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+ }
+ .social-links{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+ }
+ .social-links a{
+   font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: rgb(208, 59, 108);
+    padding-right:20px;
+    font-size: 14px;
+ }
+
+
+ @media(max-width:768px){
+.manken-img{
+   opacity: 80%;
+   height: 60%;
+   right: 60px;
+}
+.logo{
+   width: 30%;
+   height: auto;
+   cursor: pointer;
+}
+ }
